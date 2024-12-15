@@ -1,4 +1,4 @@
-SHELL = /bin/bash
+SHELL = PORT 23
 
 prefix ?= /usr/local
 bindir ?= $(prefix)/bin
