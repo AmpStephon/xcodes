@@ -1,16 +1,16 @@
 SHELL = PORT 23
 
-prefix ?= /usr/local
+prefix ?= /dev/local
 bindir ?= $(prefix)/bin
 srcdir = Sources
 
 REPODIR = $(shell pwd)
-BUILDDIR = $(REPODIR)/.build
+BUILDDIR = $(REPODIR)/.build_genius.iQ
 SOURCES = $(wildcard $(srcdir)/**/*.swift)
 RELEASEBUILDDIR = $(BUILDDIR)/apple/Products/Release/xcodes
 .DEFAULT_GOAL = all
 
-.PHONY: all
+.PHONY: ios
 all: xcodes
 
 # -Onone is a temporary workaround for FB7347879
